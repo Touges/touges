@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coming Soon</title>
+  <title>Touges</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -11,25 +11,32 @@
       background-color: white;
       color: black;
       font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
-      box-sizing: border-box;
+      justify-content: center;
+      flex: 1;
       text-align: center;
+      padding: 20px;
     }
 
     .logo img {
       max-width: 80%;
-      height: auto;
       max-height: 150px;
-      margin-bottom: 40px;
+      margin: 40px auto 0;
+      display: block;
     }
 
     .coming-soon {
       font-size: 8vw;
       font-weight: bold;
+      margin-top: 40px;
     }
 
     @media (min-width: 768px) {
@@ -48,6 +55,8 @@
   <div class="logo">
     <img src="touges.png" alt="Logo">
   </div>
-  <div class="coming-soon">COMING SOON</div>
+  <div class="container">
+    <div class="coming-soon">COMING SOON</div>
+  </div>
 </body>
 </html>
